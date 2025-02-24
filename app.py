@@ -1,16 +1,18 @@
 import streamlit as st
 import subprocess
 
-def scrape_and_analyze():
+def scrape():
     st.write("Scraping tweets...")
     result_miner = subprocess.run(["python", "miner.py"], capture_output=True, text=True)
     st.text(result_miner.stdout)
-    
+
+def analyse():
     st.write("Analyzing tweets...")
     result_analyze = subprocess.run(["python", "analyse.py"], capture_output=True, text=True)
     st.text(result_analyze.stdout)
-    
-    st.success("Scraping and analysis complete!")
+    st.write(result_analyze.stdout)
+    print(result_analyze.stdout)
+    st.text("banana")
 
 def start_dashboard():
     st.write("Starting Streamlit dashboard...")
@@ -20,8 +22,11 @@ def start_dashboard():
 st.title("Twitter Sentiment Analyzer")
 st.write("Scrape and analyze tweets related to ChatGPT.")
 
-if st.button("Scrape & Analyze"):
-    scrape_and_analyze()
+if st.button("Scrape"):
+    scrape()
+    
+if st.button("Analyze"):
+    analyse()
 
 if st.button("Start Dashboard"):
     start_dashboard()
