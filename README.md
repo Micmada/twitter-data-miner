@@ -12,7 +12,7 @@ This project scrapes recent tweets about ChatGPT, performs sentiment analysis on
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-username/twitter-chatgpt-sentiment.git
+git clone https://github.com/Micmada/twitter-chatgpt-sentiment.git
 cd twitter-chatgpt-sentiment
 ```
 
