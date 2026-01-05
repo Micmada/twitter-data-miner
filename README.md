@@ -4,7 +4,6 @@ details: >
   Scrapes recent tweets about ChatGPT, analyzes sentiment using TextBlob,
   and displays results in an interactive Streamlit dashboard. Filters by sentiment type.
 technologies:
-  - python
   - streamlit
   - textblob
   - ai
