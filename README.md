@@ -11,6 +11,7 @@ hostedUrl:
 ---
 
 
+
 # Twitter ChatGPT Sentiment Analyzer
 
 This project scrapes recent tweets about ChatGPT, performs sentiment analysis on them, and provides a Streamlit-based dashboard to visualize the results.
