@@ -1,15 +1,23 @@
 ---
-description: Sentiment analysis of ChatGPT tweets with Streamlit dashboard
+description: Real-time Twitter sentiment analysis dashboard for ChatGPT discussions using NLP
 details: >
-  Scrapes recent tweets about ChatGPT, analyzes sentiment using TextBlob,
-  and displays results in an interactive Streamlit dashboard. Filters by sentiment type.
+  A sentiment analysis tool that scrapes and analyzes recent tweets about ChatGPT
+  using the Twitter API and TextBlob natural language processing. Features an
+  interactive Streamlit dashboard with sentiment filtering, visual analytics,
+  and real-time data collection. The application fetches tweets while filtering
+  out OpenAI developer accounts, performs polarity and subjectivity analysis on
+  each tweet, and stores results in JSON format for analysis. Users can scrape
+  new tweets, run sentiment analysis, and visualize results through an intuitive
+  web interface with sentiment type filters (positive, negative, neutral). Built
+  with a modular architecture separating data collection, analysis, and
+  visualization components, making it adaptable for other Twitter sentiment
+  analysis projects or brand monitoring applications.
 technologies:
+  - ai
   - streamlit
   - textblob
-  - ai
 hostedUrl: 
 ---
-
 
 
 # Twitter ChatGPT Sentiment Analyzer
